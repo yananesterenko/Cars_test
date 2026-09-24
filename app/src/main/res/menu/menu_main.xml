@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.cars_test.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_cars"
+        android:orderInCategory="100"
+        android:title="Cars"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_customers"
+        android:orderInCategory="100"
+        android:title="Customers"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rentals"
+        android:orderInCategory="100"
+        android:title="Rentals"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+
+
+    <!-- Main screen -->
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.cars_test.FirstFragment"
+        android:label="@string/main_title"
+        tools:layout="@layout/fragment_first">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CarsFragment"
+            app:destination="@id/CarsFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_RentalsFragment"
+            app:destination="@id/RentalsFragment" />
+
+        <action
+            android:id="@+id/action_FirstFragment_to_CustomersFragment"
+            app:destination="@id/CustomersFragment" />
+
+    </fragment>
+
+    <!-- Cars screen -->
+
+    <fragment
+        android:id="@+id/CarsFragment"
+        android:name="com.example.cars_test.CarsFragment"
+        android:label="@string/cars"
+        tools:layout="@layout/fragment_cars" >
+    <action
+        android:id="@+id/action_CarsFragment_to_CarFragment"
+        app:destination="@id/CarFragment" />
+
+    <action
+        android:id="@+id/action_CarsFragment_to_CarDetailsFragment"
+        app:destination="@id/CarDetailsFragment" />
+    </fragment>
+
+
+
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.cars_test.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_second">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/CarFragment"
+        android:name="com.example.cars_test.CarFragment"
+        android:label="Car"
+        tools:layout="@layout/fragment_car">
+
+        <action
+            android:id="@+id/action_CarFragment_to_CarsFragment"
+            app:destination="@id/CarsFragment" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/CarDetailsFragment"
+        android:name="com.example.cars_test.CarDetailsFragment"
+        android:label="Car Details"
+        tools:layout="@layout/fragment_car_details">
+
+
+        <argument
+            android:name="carId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_CarDetailsFragment_to_CarFragment"
+            app:destination="@id/CarFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/RentalsFragment"
+        android:name="com.example.cars_test.RentalsFragment"
+        android:label="@string/rentals"
+        tools:layout="@layout/fragment_rentals" >
+
+        <action
+            android:id="@+id/action_RentalsFragment_to_NewRentalFragment"
+            app:destination="@id/NewRentalFragment" />
+
+        <action
+            android:id="@+id/action_RentalsFragment_to_RentalDetailsFragment"
+            app:destination="@id/RentalDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/NewRentalFragment"
+        android:name="com.example.cars_test.RentalFragment"
+        android:label="New Rental"
+        tools:layout="@layout/fragment_rental" >
+        <argument
+            android:name="rentalId"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/RentalDetailsFragment"
+        android:name="com.example.cars_test.RentalDetailsFragment"
+        android:label="Rental Details"
+        tools:layout="@layout/fragment_rental_details">
+
+        <argument
+            android:name="rentalId"
+            app:argType="long" />
+        <action
+            android:id="@+id/action_RentalDetailsFragment_to_CustomerDetailsFragment"
+            app:destination="@id/CustomerDetailsFragment" />
+        <action
+            android:id="@+id/action_RentalDetailsFragment_to_NewRentalFragment"
+            app:destination="@id/NewRentalFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/CustomersFragment"
+        android:name="com.example.cars_test.fragment.CustomersFragment"
+        android:label="Customers"
+        tools:layout="@layout/fragment_customers">
+
+        <action
+            android:id="@+id/action_CustomersFragment_to_AddCustomerFragment"
+            app:destination="@id/AddCustomerFragment" />
+
+        <action
+            android:id="@+id/action_CustomersFragment_to_CustomerDetailsFragment"
+            app:destination="@id/CustomerDetailsFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/AddCustomerFragment"
+        android:name="com.example.cars_test.AddCustomerFragment"
+        android:label="Add Customer"
+        tools:layout="@layout/fragment_add_customer">
+    <argument
+        android:name="customerId"
+        app:argType="long"
+        android:defaultValue="0L" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/CustomerDetailsFragment"
+        android:name="com.example.cars_test.fragment.CustomerDetailsFragment"
+        android:label="Customer Details"
+        tools:layout="@layout/fragment_customer_details">
+
+        <argument
+            android:name="customerId"
+            app:argType="long" />
+
+        <action
+            android:id="@+id/action_CustomerDetailsFragment_to_AddCustomerFragment"
+            app:destination="@id/AddCustomerFragment" />
+        <action
+            android:id="@+id/action_CustomerDetailsFragment_to_RentalDetailsFragment"
+            app:destination="@id/RentalDetailsFragment" />
+
+    </fragment>
+
+
+</navigation>

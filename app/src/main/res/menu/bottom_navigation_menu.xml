@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/FirstFragment"
+        android:icon="@drawable/ic_home"
+        android:tooltipText="Home" />
+
+    <item
+        android:id="@+id/CarsFragment"
+        android:icon="@drawable/ic_car"
+        android:tooltipText="Cars" />
+
+    <item
+        android:id="@+id/RentalsFragment"
+        android:icon="@android:drawable/ic_menu_agenda"
+        android:tooltipText="Rentals" />
+
+    <item
+        android:id="@+id/CustomersFragment"
+        android:icon="@android:drawable/ic_menu_myplaces"
+        android:tooltipText="Customers" />
+
+</menu>

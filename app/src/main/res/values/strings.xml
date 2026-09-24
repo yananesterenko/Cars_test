@@ -1,0 +1,81 @@
+<resources>
+
+    <!-- Application -->
+    <string name="app_name">Cars Rental</string>
+
+    <!-- Menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Main screen -->
+    <string name="main_title">Cars Rental</string>
+    <string name="main_subtitle">Fleet Management</string>
+
+    <!-- Main buttons -->
+    <string name="cars">Cars</string>
+    <string name="customers">Customers</string>
+    <string name="rentals">Rentals</string>
+
+    <!-- Dashboard -->
+    <string name="today">Today</string>
+    <string name="total_cars">Total cars</string>
+    <string name="available">Available</string>
+    <string name="rented">Rented</string>
+    <string name="maintenance">Maintenance</string>
+
+    <!-- Common -->
+    <string name="add">Add</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="close">Close</string>
+
+
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="lorem_ipsum">
+       Test 1lf
+    </string>
+    <string name="dashboard_empty">Total cars: 0&#10;Available: 0&#10;Rented: 0&#10;Maintenance: 0</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    //Cars fragment
+    <string name="add_car">Add Car</string>
+    <string name="update_car">Update Car</string>
+
+    <string name="no_cars">No cars added yet</string>
+
+    <string name="year">Year</string>
+    <string name="year_hint">e.g. 2022</string>
+
+    <string name="license_plate">License Plate</string>
+    <string name="license_plate_hint">e.g. N-AB 1234</string>
+
+    <string name="vin">VIN</string>
+    <string name="vin_hint">Vehicle identification number</string>
+
+    <string name="mileage">Mileage (km)</string>
+    <string name="mileage_hint">e.g. 45000</string>
+
+    <string name="price_per_day">Price per Day (€)</string>
+    <string name="price_per_day_hint">e.g. 59.90</string>
+
+    <string name="status">Status</string>
+
+    <string name="notes">Notes</string>
+    <string name="notes_hint">Additional information</string>
+
+    <string name="model">Model</string>
+
+    <string name="brand">Brand</string>
+    <string name="brand_hint">Brand</string>
+
+    <string name="model_hint">Model_</string>
+
+    <string name="save_car">Save Car</string>
+</resources>

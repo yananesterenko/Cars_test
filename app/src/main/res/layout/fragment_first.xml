@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- App title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cars Rental"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- MENU ROW 1 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+            <Button
+                android:id="@+id/buttonCars"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Cars"
+                android:layout_marginEnd="4dp" />
+
+            <Button
+                android:id="@+id/buttonCustomers"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:text="Customers"
+                android:layout_marginStart="4dp" />
+
+        </LinearLayout>
+
+
+        <!-- MENU ROW 2 -->
+
+        <Button
+            android:id="@+id/buttonRentals"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Rentals"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- CALENDAR -->
+
+
+        <!-- SELECTED DATE -->
+
+        <TextView
+            android:id="@+id/textSelectedDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="22 September 2026"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true" />
+
+
+        <!-- DAY INFO -->
+
+        <TextView
+            android:id="@+id/textStatistics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rented: 0&#10;Available: 0&#10;Revenue: €0.00"
+            android:textSize="18sp"
+            android:lineSpacingExtra="6dp"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- RENTALS TITLE -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rentals"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+
+        <!-- RENTALS FOR SELECTED DATE -->
+
+        <TextView
+            android:id="@+id/textNoRentals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No rentals for this date"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout
+            android:id="@+id/rentalsContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+</ScrollView>
